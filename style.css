@@ -9,10 +9,59 @@
 html, body {
 	height: 100%;
 	margin: 0;
-	padding: 30px;
+	padding: 0;
 	background-color: var(--bg);
 	color: var(--text);
 	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+}
+
+/* Vertical Navigation Bar Styles */
+.vertical-nav {
+	background-color: #333;
+	width: 200px;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.vertical-nav ul {
+	list-style-type: none;
+	padding: 20px 0;
+	margin: 0;
+}
+
+.vertical-nav li {
+	margin: 0;
+}
+
+.vertical-nav a {
+	display: block;
+	padding: 15px 20px;
+	color: #ffffff;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+	border-left: 4px solid transparent;
+}
+
+.vertical-nav a:hover {
+	background-color: #555;
+}
+
+.vertical-nav a.active {
+	background-color: var(--heading);
+	color: #000000;
+	border-left: 4px solid #000000;
+	font-weight: bold;
+}
+
+body {
+	margin-left: 200px;
+	padding: 30px;
 }
 
 h1, p {
@@ -35,6 +84,10 @@ h2, h3, h4, h5, h6 {
 a {
 	color: inherit;
 	text-decoration: underline;
+}
+
+.vertical-nav a {
+	text-decoration: none;
 }
 
 div {
