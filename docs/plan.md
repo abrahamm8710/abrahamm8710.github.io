@@ -26,3 +26,37 @@
 
 
 # Work Breadown Structure
+
+
+## Personal Portfolio Site
+
+Website
+
+- Homepage
+    - Create introduction about myself
+    - Add navigation bar
+    - Add project section
+
+- About Page
+    - Add work experience
+    - My hobbies and goals
+    - Add visuals or photos
+
+- Style CSS sheet
+    - Test layout for both pages
+    - Adjust colors
+    - Create CSS properties
+
+Documentation
+
+- README md file
+- Plan md file
+- Retrospective md file
+- Scope Statement md file
+
+Deployment
+
+- GitHub Pages
+- GitHub Repository
+- Visual Studio Code
+
