@@ -90,7 +90,67 @@ a {
 	text-decoration: none;
 }
 
-div {
+/* Intro row: left text, right image */
+.intro-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	max-width: 1000px;
+	margin: 20px 0 30px 0;
+	padding: 10px 0;
+}
+
+.intro-text {
+	flex: 1 1 58%;
+	font-size: 1.5rem;
+	line-height: 1.2;
+	color: #000000;
+	text-align: left;
+}
+
+.intro-text strong {
+	display: inline-block;
+	font-weight: 700;
+}
+
+.intro-image {
+	flex: 0 0 420px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.intro-image img {
+	width: 100%;
+	max-width: 420px;
+	height: auto;
+	display: block;
+	border-radius: 8px;
+	box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+	object-fit: cover;
+}
+
+@media (max-width: 760px) {
+	.intro-row {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		gap: 12px;
+	}
+
+	.intro-image {
+		width: 100%;
+		flex: 0 0 auto;
+		justify-content: center;
+	}
+
+	.intro-text {
+		font-size: 1.2rem;
+	}
+}
+
+/* Small content box styling (kept for other content) */
+div.content-box {
 	width: 300px;
 	height: 150px;
 	background-color: #ffffff;
