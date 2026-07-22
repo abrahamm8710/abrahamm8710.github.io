@@ -9,6 +9,8 @@
 html, body {
 	height: 100%;
 	margin: 0;
+	display: flex;
+	flex-direction: column;
 .intro-row.centered {
 	flex-direction: column;
 	align-items: center;
@@ -76,6 +78,8 @@ html, body {
 body {
 	margin-left: 200px;
 	padding: 30px;
+	display: flex;
+	flex-direction: column;
 }
 
 h1, p {
@@ -279,17 +283,148 @@ div.content-box {
 	color: #ffffff;
 	padding: 12px 20px;
 	text-align: center;
-	margin-top: 24px;
+	margin-top: auto;
 }
 .site-footer .footer-content p {
 	margin: 0;
 	font-size: 0.95rem;
 }
 .site-footer a {
-	color: #f5f8ff;
+	color: #000000;
 	text-decoration: underline;
 }
 .site-footer a:hover {
 	text-decoration: none;
 	opacity: 0.9;
+}
+/* Mobile Responsive Design */
+@media (max-width: 1024px) {
+	.vertical-nav {
+		width: 150px;
+	}
+	body {
+		margin-left: 150px;
+		padding: 20px;
+	}
+	.intro-image {
+		flex: 0 0 300px;
+	}
+	.intro-image img {
+		max-width: 300px;
+	}
+}
+
+@media (max-width: 768px) {
+	.vertical-nav {
+		width: 100%;
+		height: auto;
+		position: static;
+		border-bottom: 2px solid #193fba;
+	}
+	body {
+		margin-left: 0;
+		padding: 15px;
+	}
+	.vertical-nav ul {
+		display: flex;
+		flex-direction: row;
+		padding: 0;
+		gap: 0;
+	}
+	.vertical-nav li {
+		flex: 1;
+	}
+	.vertical-nav a {
+		padding: 12px 10px;
+		text-align: center;
+		border-left: none;
+		border-bottom: 4px solid transparent;
+	}
+	.vertical-nav a:hover {
+		background-color: rgba(255, 255, 255, 0.1);
+		border-bottom: 4px solid #1f51cf;
+	}
+	.vertical-nav a.active {
+		border-left: none;
+		border-bottom: 4px solid var(--heading);
+		background-color: rgba(255, 255, 255, 0.15);
+	}
+	.intro-row {
+		flex-direction: column-reverse;
+		gap: 12px;
+		margin: 15px 0 20px 0;
+	}
+	.intro-image {
+		flex: 0 0 auto;
+		justify-content: center;
+		width: 100%;
+	}
+	.intro-image img {
+		max-width: 250px;
+		width: 100%;
+	}
+	.intro-text {
+		font-size: 1.1rem;
+		flex: 1;
+	}
+	.about-section {
+		max-width: 100%;
+		width: calc(100% - 20px);
+		padding: 15px 15px;
+	}
+	.hobby-cards {
+		gap: 12px;
+	}
+	.hobby-card {
+		flex: 1 1 150px;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		padding: 12px;
+	}
+	h1 {
+		font-size: 1.5rem;
+	}
+	h2 {
+		font-size: 1.3rem;
+	}
+	p {
+		font-size: 0.95rem;
+	}
+	.vertical-nav a {
+		padding: 10px 8px;
+		font-size: 0.9rem;
+	}
+	.intro-text {
+		font-size: 1rem;
+	}
+	.intro-image img {
+		max-width: 180px;
+	}
+	.about-section {
+		width: calc(100% - 16px);
+		padding: 12px 12px;
+	}
+	.about-header h1 {
+		font-size: 1.8rem;
+	}
+	.hobby-card {
+		flex: 1 1 100%;
+		max-width: 100%;
+	}
+	.hobby-icon {
+		font-size: 1.8rem;
+	}
+	.hobby-title {
+		font-size: 0.95rem;
+	}
+	.hobby-text {
+		font-size: 0.85rem;
+	}
+	.site-footer .footer-content p {
+		font-size: 0.85rem;
+	}
 }
