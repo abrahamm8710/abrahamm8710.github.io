@@ -272,3 +272,24 @@ div.content-box {
 		max-width: 100%;
 	}
 }
+
+/* Footer styles */
+.site-footer {
+	background: #193fba;
+	color: #ffffff;
+	padding: 12px 20px;
+	text-align: center;
+	margin-top: 24px;
+}
+.site-footer .footer-content p {
+	margin: 0;
+	font-size: 0.95rem;
+}
+.site-footer a {
+	color: #f5f8ff;
+	text-decoration: underline;
+}
+.site-footer a:hover {
+	text-decoration: none;
+	opacity: 0.9;
+}
