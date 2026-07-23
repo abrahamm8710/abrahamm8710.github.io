@@ -27,6 +27,11 @@ html, body {
 /* Vertical Navigation Bar Styles */
 .vertical-nav {
 	background-color: #1f51cf;
+	background-image: 
+		radial-gradient(circle, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
+		radial-gradient(circle, rgba(255, 255, 255, 0.08) 3px, transparent 3px);
+	background-size: 60px 80px, 40px 60px;
+	background-position: 0 0, 20px 10px;
 	width: 200px;
 	height: 100vh;
 	padding: 0;
@@ -60,6 +65,33 @@ html, body {
 	text-decoration: none;
 	transition: background-color 0.3s ease;
 	border-left: 4px solid transparent;
+	position: relative;
+}
+
+.vertical-nav a::before {
+	content: '';
+	position: absolute;
+	left: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.3);
+	transition: all 0.3s ease;
+}
+
+.vertical-nav a:hover::before {
+	width: 12px;
+	height: 12px;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.vertical-nav a.active::before {
+	width: 10px;
+	height: 10px;
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 .vertical-nav a:hover {
@@ -202,11 +234,11 @@ div.content-box {
 
 .about-section {
 	background: #1f51cf;
-	padding: 18px 20px;
-	margin: 16px auto;
+	padding: 18px 24px;
+	margin: 16px 0;
 	border-radius: 6px;
-	max-width: 900px;
-	width: calc(100% - 40px);
+	max-width: 100%;
+	width: 100%;
 	box-sizing: border-box;
 	border: 1px solid #193fba;
 }
@@ -218,7 +250,7 @@ div.content-box {
 }
 
 .about-section p {
-	color: #f5f8ff;
+	color: #000000;
 }
 
 .about-section ul {
