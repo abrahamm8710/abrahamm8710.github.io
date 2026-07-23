@@ -12,7 +12,7 @@ The instructor of this course will provide feedback for this project as well as 
 
 ## Description
 
-My personal portfolio site will consist of two-page personal portfolio website involving the use of HTML and CSS code. The portfolio site will have a homepage that shows more about myself. It will have an additional page that will include my education, work experience, skills, and hobbies, as well as contact information. My two page site will use the same design format throughout the site and will be published using GitHub Pages. 
+My personal portfolio site will consist of two-page personal portfolio website involving the use of HTML and CSS code. The portfolio site will have a homepage that shows more about myself. It will have an additional page that will include my education, work experience, skills, and hobbies. My two page site will use the same design format throughout the site and will be published using GitHub Pages. 
 
 ## People Resources
 
